@@ -1,0 +1,23 @@
+.btn-light-red
+{
+    background: #00ff00;
+    color: white;
+}
+.btn-light-red:hover
+{
+    background:none;
+    border: 1px solid #00ff00;
+    color: white;
+}
+.mt-5
+{
+    margin-top: 40px;
+}
+.colorwhite
+{
+    color: white;
+}
+#demo{
+    font-size: 40rem;
+    font-weight: bold;
+}
