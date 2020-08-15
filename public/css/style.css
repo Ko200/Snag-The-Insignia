@@ -709,6 +709,25 @@ li {
 	animation: flipInX 2s ease-in-out 800ms both;
 }
 
+.img-responsive{
+    display: block;
+}
+
+.img-responsive.mobile{
+    display: none !important;
+}
+
+.carousel-inner .gear-img{
+    width: auto !important;
+    height: 150px !important;
+    min-height: 1px !important;
+    display: none;
+    float:inline-end;
+    position: relative;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
 
 @media (min-width : 992px) {
     
@@ -750,7 +769,8 @@ li {
 
 
 @media (min-width : 768px) and (max-width: 991px) {
-    
+
+
     #main-slide .slider-content h1{
 		font-size: 7rem;
         margin-bottom: 10px;
@@ -803,6 +823,7 @@ li {
 
 @media (max-width : 767px) {
     
+
     #main-slide .slider-content h1{
         margin-top: 160px;
 		font-size: 7rem;
@@ -872,8 +893,27 @@ li {
 
 @media (max-width : 479px) {
     
+    .img-responsive {
+        display: none;
+    }
+
+    .img-responsive.mobile{
+        display: block !important;
+    }
+
+    .carousel-inner .gear-img{
+        display: block;
+        
+    }
+
+    .gear-svg{
+        display: none;
+    }
+
     #main-slide .slider-content h1{
-		font-size: 4rem;
+        font-size: 4rem;
+        position: relative;
+        bottom: 60px;
 	}
     
     #main-slide .item {
@@ -883,7 +923,7 @@ li {
     .count{
         margin: 40px 0;
         position: relative;
-        bottom: 10px;
+        bottom: 90px;
       }
     .countd{
         display: inline-block;
@@ -902,6 +942,7 @@ li {
       }
     
       .gear-svg {
+          display: none;
           margin-top: 10px;
         height: 100px; 
         float:inline-end;
@@ -915,7 +956,7 @@ li {
     #main-slide .slider-content p{
         font-size: 3rem;
         position: relative;
-        top: 30px;
+        bottom: 50px;
     }
 
     .carousel .carousel-inner {
