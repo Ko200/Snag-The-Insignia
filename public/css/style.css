@@ -56,25 +56,6 @@
     }
 } */
 
-.count{
-    margin: 40px 0;
-  }
-.countd{
-    display: inline-block;
-    width: 160px;
-    height: 160px;
-    background: #5ab12fbd;
-    /* border: 2px solid; */
-    margin: 0 30px;
-    font-size: 20px;
-    overflow: hidden;
-  }
-.countd span{
-    display: block;
-    font-size: 60px;
-    margin-top: 14px;
-  }
-  
 
 body {
     overflow-x: hidden;
@@ -728,6 +709,25 @@ li {
 	animation: flipInX 2s ease-in-out 800ms both;
 }
 
+.img-responsive{
+    display: block;
+}
+
+.img-responsive.mobile{
+    display: none !important;
+}
+
+.carousel-inner .gear-img{
+    width: auto !important;
+    height: 150px !important;
+    min-height: 1px !important;
+    display: none;
+    float:inline-end;
+    position: relative;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
 
 @media (min-width : 992px) {
     
@@ -740,11 +740,37 @@ li {
     #main-slide .slider-content p{
         font-size: 6rem;
     }
+
+    .count{
+        margin: 40px 0;
+      }
+    .countd{
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        background: #5ab12fbd;
+        /* border: 2px solid; */
+        margin: 0 30px;
+        font-size: 20px;
+        overflow: hidden;
+      }
+    .countd span{
+        display: block;
+        font-size: 60px;
+        margin-top: 14px;
+      }
+    
+      .gear-svg {
+        height: 150px; 
+        float:inline-end;
+      }
+      
 }
 
 
 @media (min-width : 768px) and (max-width: 991px) {
-    
+
+
     #main-slide .slider-content h1{
 		font-size: 7rem;
         margin-bottom: 10px;
@@ -766,15 +792,41 @@ li {
     #main-slide .item {
         height: 550px;
     }
+
+    .count{
+        margin: 40px 0;
+      }
+    .countd{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #5ab12fbd;
+        /* border: 2px solid; */
+        margin: 0 30px;
+        font-size: 15px;
+        overflow: hidden;
+      }
+    .countd span{
+        display: block;
+        font-size: 40px;
+        margin-top: 14px;
+      }
+    
+      .gear-svg {
+        height: 100px; 
+        float:inline-end;
+      }
+      
     
 }
 
 
 @media (max-width : 767px) {
     
+
     #main-slide .slider-content h1{
         margin-top: 160px;
-		font-size: 5rem;
+		font-size: 7rem;
 		line-height: normal;
 		margin-bottom: 0;
 	}
@@ -798,19 +850,118 @@ li {
     #main-slide .item {
         height: 400px;
     }
+
+
+    .count{
+        margin: 40px 0;
+        position: relative;
+        bottom: 60px;
+      }
+    .countd{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #5ab12fbd;
+        /* border: 2px solid; */
+        margin: 0 30px;
+        font-size: 15px;
+        overflow: hidden;
+      }
+    .countd span{
+        display: block;
+        font-size: 40px;
+        margin-top: 14px;
+      }
     
+      .gear-svg {
+        height: 100px; 
+        float:inline-end;
+      }
+      
+    .Title-heading{
+        position: relative;
+        bottom: 100px;
+    }
+
+    #main-slide .slider-content p{
+        font-size: 5rem;
+        position: relative;
+        bottom: 50px;
+    }
 }
 
 
 @media (max-width : 479px) {
     
-    #main-slide .item .slider-content{
-		display: none;
+    .img-responsive {
+        display: none;
+    }
+
+    .img-responsive.mobile{
+        display: block !important;
+    }
+
+    .carousel-inner .gear-img{
+        display: block;
+        
+    }
+
+    .gear-svg{
+        display: none;
+    }
+
+    #main-slide .slider-content h1{
+        font-size: 4rem;
+        position: relative;
+        bottom: 60px;
 	}
     
     #main-slide .item {
         height: 180px;
     }
+
+    .count{
+        margin: 40px 0;
+        position: relative;
+        bottom: 90px;
+      }
+    .countd{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #5ab12fbd;
+        /* border: 2px solid; */
+        margin: 10px 10px;
+        font-size: 15px;
+        overflow: hidden;
+      }
+    .countd span{
+        display: block;
+        font-size: 40px;
+        margin-top: 14px;
+      }
+    
+      .gear-svg {
+          display: none;
+          margin-top: 10px;
+        height: 100px; 
+        float:inline-end;
+      }
+      
+    .Title-heading{
+        position: relative;
+        bottom: 30px;
+    }
+
+    #main-slide .slider-content p{
+        font-size: 3rem;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .carousel .carousel-inner {
+        min-height: 100vh;
+      }
     
 }
 
@@ -1440,7 +1591,7 @@ and (min-width : 551px){
 /*-------------------------------------------------*/
 
 .contact {
-    background: url(../images/parallax/contact-bg.jpg);
+    background: url(../images/Snag-the-insignia-BG.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1663,7 +1814,7 @@ footer.style-1 .footer-link li {
 
 
 .call-to-action {
-    background: url(../images/parallax/call-to.jpg);
+    background: url(../images/Snag-the-insignia-BG.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 90%;
